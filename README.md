@@ -1,2 +1,2 @@
 # taller-prod-api
-Rosa Carolina Romero López
+Frida Arroyo
