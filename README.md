@@ -1,6 +1,6 @@
 # taller-prod-api
+Emilio Sonck Patiño
 
-## Developers
 Andrea Lizeth Contreras Jiménez
 
 Diego Alexis Quiroz Gaona
