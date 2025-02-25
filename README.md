@@ -1,2 +1,9 @@
 # taller-prod-api
-Jean Carlo Daniel Moreno Falcon
+Emilio Sonck Patiño
+
+Andrea Lizeth Contreras Jiménez
+
+Diego Alexis Quiroz Gaona
+
+Frida Arroyo
+
