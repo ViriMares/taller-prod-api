@@ -22,8 +22,8 @@ public class UsuarioController {
     }
 
     // Obtener un usuario por nombre
-    @GetMapping("/{nombreUsuario}")
-    public Optional<UsuarioDTO> getUsuario(@PathVariable String nombreUsuario) {
-        return usuarioService.getUsuarioByNombre(nombreUsuario);
+    @GetMapping("/{IdUsurious}")
+    public Optional<UsuarioDTO> getIdUsuario(@PathVariable Integer IdUsurious) {
+        return usuarioService.getIdUsuario(IdUsurious);
     }
 }

@@ -25,8 +25,8 @@ public class UsuarioService {
     }
 
     // Obtener un usuario por nombre
-    public Optional<UsuarioDTO> getUsuarioByNombre(String nombreUsuario) {
-        Optional<Usuario> usuario = usuarioRepository.findByNombreUsuario(nombreUsuario);
+    public Optional<UsuarioDTO> getIdUsuario(int IdUsuario) {
+        Optional<Usuario> usuario = usuarioRepository.findById(IdUsuario);
         return usuario.map(u -> new UsuarioDTO(u.getIdUsuario(), u.getNombreUsuario(), u.getCorreoElectronico(), u.getNumeroTelefonico(), u.getDireccion(), u.getTipoUsuario()));
     }
 }
