@@ -1,2 +1,10 @@
 # taller-prod-api
-Rosa Carolina Romero López
+Emilio Sonck Patiño
+
+Andrea Lizeth Contreras Jiménez
+
+Diego Alexis Quiroz Gaona
+
+Frida Arroyo
+
+Jean Carlo
