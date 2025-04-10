@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "176f8f5a-0bcc-4350-a37b-571c3c016f69",
+		"name": "Taller API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4935440",
+		"_collection_link": "https://dark-star-580554.postman.co/workspace/VYUS-Systems~8f884b15-fb0c-4084-9a91-20e447c6723a/collection/4935440-176f8f5a-0bcc-4350-a37b-571c3c016f69?action=share&source=collection_link&creator=4935440"
+	},
+	"item": [
+		{
+			"name": "Crear un Usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombreUsuario\": \"Viridiana Mares\",\r\n    \"correoElectronico\": \"viridiana.mares@tecmilenio.mx\",\r\n    \"numeroTelefonico\": \"777777777\",\r\n    \"numeroSecundario\": \"888888888\",\r\n    \"direccion\": \"CDMX\",\r\n    \"pais\": \"Mexico\",\r\n    \"tipoUsuario\": \"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/usuarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear un Producto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombreProducto\": \"Camara IP Bullet de 4 Megapixeles\",\r\n    \"precio\": \"2000\",\r\n    \"stock\": \"23\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/productos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"productos"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
