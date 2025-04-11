@@ -43,13 +43,33 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"nombreProducto\": \"Camara IP Bullet de 4 Megapixeles\",\r\n    \"precio\": \"2000\",\r\n    \"stock\": \"23\"\r\n}",
+					"raw": "{\r\n    \"nombreProducto\": \"Sistema de Alarma IQ4 NS\",\r\n    \"precio\": \"3000\",\r\n    \"stock\": \"10\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
+				"url": {
+					"raw": "http://localhost:8080/api/productos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"productos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener todos los Productos",
+			"request": {
+				"method": "GET",
+				"header": [],
 				"url": {
 					"raw": "http://localhost:8080/api/productos",
 					"protocol": "http",
