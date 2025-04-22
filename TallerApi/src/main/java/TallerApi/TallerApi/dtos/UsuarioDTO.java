@@ -2,6 +2,7 @@ package TallerApi.TallerApi.dtos;
 
 public class UsuarioDTO {
 
+    private Integer idUsuario;
     private String nombreUsuario;
     private String correoElectronico;
     private String numeroTelefonico;
@@ -10,7 +11,26 @@ public class UsuarioDTO {
     private String pais;
     private String tipoUsuario;
 
-    // Getters y Setters
+    // Constructor, Getters y Setters
+    public UsuarioDTO(Integer idUsuario, String nombreUsuario, String correoElectronico, String numeroTelefonico, String numeroSecundario, String direccion) {
+        this.idUsuario = idUsuario;
+        this.nombreUsuario = nombreUsuario;
+        this.correoElectronico = correoElectronico;
+        this.numeroTelefonico = numeroTelefonico;
+        this.numeroSecundario = numeroSecundario;
+        this.direccion = direccion;
+        this.pais = pais;
+        this.tipoUsuario = tipoUsuario;
+    }
+
+    public Integer getIdUsuario() {
+        return idUsuario;
+    }
+
+    public void setIdUsuario(Integer idUsuario) {
+        this.idUsuario = idUsuario;
+    }
+
     public String getNombreUsuario() {
         return nombreUsuario;
     }

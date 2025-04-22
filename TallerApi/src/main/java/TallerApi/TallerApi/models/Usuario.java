@@ -1,4 +1,5 @@
 package TallerApi.TallerApi.models;
+
 import jakarta.persistence.*;
 
 @Entity

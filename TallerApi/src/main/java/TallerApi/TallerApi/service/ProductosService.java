@@ -32,5 +32,8 @@ public class ProductosService {
         return productosRepository.findAll();
     }
 
+    public Productos getProductoById(Integer id) {
+        return productosRepository.findById(id).orElse(null);  // Retorna el producto o null si no se encuentra
+    }
 
 }

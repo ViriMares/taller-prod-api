@@ -4,6 +4,7 @@ import java.util.Date;
 
 public class ProductosDTO {
 
+    private Integer idProducto;
     private String nombreProducto;
     private Double precio;
     private Integer stock;
@@ -40,5 +41,13 @@ public class ProductosDTO {
 
     public void setFechaActualizacion(LocalDateTime fechaActualizacion) {
         this.fechaActualizacion = fechaActualizacion;
+    }
+
+    public Integer getIdProducto() {
+        return idProducto;
+    }
+
+    public void setIdProducto(Integer idProducto) {
+        this.idProducto = idProducto;
     }
 }
