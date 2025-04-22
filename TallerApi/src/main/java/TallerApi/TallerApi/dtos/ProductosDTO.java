@@ -1,13 +1,15 @@
 package TallerApi.TallerApi.dtos;
+
 import java.time.LocalDateTime;
-import java.util.Date;
 
 public class ProductosDTO {
-
     private String nombreProducto;
     private Double precio;
     private Integer stock;
     private LocalDateTime fechaActualizacion;
+    private String descripcion;
+    private String imagenUrl;
+    private String categoria;
 
     // Getters y Setters
     public String getNombreProducto() {
@@ -40,5 +42,29 @@ public class ProductosDTO {
 
     public void setFechaActualizacion(LocalDateTime fechaActualizacion) {
         this.fechaActualizacion = fechaActualizacion;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public String getImagenUrl() {
+        return imagenUrl;
+    }
+
+    public void setImagenUrl(String imagenUrl) {
+        this.imagenUrl = imagenUrl;
+    }
+
+    public String getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
     }
 }
