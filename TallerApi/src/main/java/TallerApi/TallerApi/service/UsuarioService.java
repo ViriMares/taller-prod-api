@@ -5,6 +5,7 @@ import TallerApi.TallerApi.models.Usuario;
 import TallerApi.TallerApi.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import java.util.list
 
 @Service
 public class UsuarioService {
@@ -23,5 +24,9 @@ public class UsuarioService {
         usuario.setTipoUsuario(usuarioDTO.getTipoUsuario());
 
         return usuarioRepository.save(usuario);
+    }
+
+    public List<Usuario> obtenerTodosLosUsuarios() {
+        return usuarioRepository.findAll();
     }
 }
