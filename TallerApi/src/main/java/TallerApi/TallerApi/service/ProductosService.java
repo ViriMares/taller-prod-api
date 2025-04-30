@@ -6,6 +6,7 @@ import TallerApi.TallerApi.repository.ProductosRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Service
 public class ProductosService {
@@ -25,5 +26,13 @@ public class ProductosService {
         }
 
         return productosRepository.save(productos);
+    }
+    
+        public List<Productos> obtenerTodosProductos(){
+        return productosRepository.findAll();
+    }
+
+    public Productos getProductoById(Integer id) {
+        return productosRepository.findById(id).orElse(null);  // Retorna el producto o null si no se encuentra
     }
 }

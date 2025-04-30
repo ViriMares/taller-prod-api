@@ -4,8 +4,10 @@ import TallerApi.TallerApi.dtos.ProductosDTO;
 import TallerApi.TallerApi.models.Productos;
 import TallerApi.TallerApi.service.ProductosService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 
 @RestController
 @RequestMapping("/api/productos")
@@ -18,4 +20,20 @@ public class ProductosController {
     public Productos crearProductos(@RequestBody ProductosDTO productosDTO) {
         return productosService.crearProductos(productosDTO);
     }
+    
+    @GetMapping
+    public List<Productos> obtenerTodosProductos(){
+        return productosService.obtenerTodosProductos();
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<Productos> getProductoById(@PathVariable Integer id) {
+        Productos producto = productosService.getProductoById(id);
+        if (producto == null) {
+            return ResponseEntity.status(404).body(null);  // Si no se encuentra, devuelve 404
+        }
+        return ResponseEntity.ok(producto);  // Si se encuentra, devuelve el producto con 200 OK
+    }
+
+
 }
