@@ -1,4 +1,5 @@
 package TallerApi.TallerApi.models;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
@@ -8,6 +9,9 @@ import java.util.Date;
 @Table(name = "productos")
 public class Productos {
 
+    @OneToOne(mappedBy = "producto", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JsonInclude
+    private Catalogo catalogo;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_producto")
@@ -66,5 +70,6 @@ public class Productos {
     public void setFechaActualizacion(LocalDateTime fechaActualizacion) {
         this.fechaActualizacion = fechaActualizacion;
     }
+
 
 }
