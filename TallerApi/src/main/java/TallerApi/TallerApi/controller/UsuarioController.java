@@ -18,4 +18,10 @@ public class UsuarioController {
     public Usuario crearUsuario(@RequestBody UsuarioDTO usuarioDTO) {
         return usuarioService.crearUsuario(usuarioDTO);
     }
+
+    @GetMapping
+    public List<Usuario> obtenerTodosLosUsuarios() {
+        return usuarioService.obtenerTodosLosUsuarios();
+    }
+
 }
